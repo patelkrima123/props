@@ -1,51 +1,60 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Card from "./Card.js";
+import "./index.css";
+import sdata from "./Sdata.js";
 import reportWebVitals from "./reportWebVitals";
+
+
+
 
 ReactDOM.render(
   <>
+    <h1>Top 5 Technology</h1>
+
     <Card
-      imgsrc="https://www.patterns.dev/img/reactjs/react-logo@3x.svg"
-      title="React"
-      sname="React Course"
-      link="https://reactjs.org/docs/getting-started.html"
-      btn="Leran React"
+      imgsrc={sdata[0].imgsrc}
+      title={sdata[0].title}
+      sname={sdata[0].sname}
+      link={sdata[0].link}
+      btn={sdata[0].btn}
     ></Card>
     <Card
-      imgsrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRneediAY_e4GKj9rUraLJw60N_2gF1Ousrnw&usqp=CAU"
-      title="Angular"
-      sname="Angular Course"
-      link="https://angular.io/start"
-      btn="Leran Angular"
+      imgsrc={sdata[1].imgsrc}
+      title={sdata[1].title}
+      sname={sdata[1].sname}
+      link={sdata[1].link}
+      btn={sdata[1].btn}
     ></Card>
     <Card
-      imgsrc="https://c4.wallpaperflare.com/wallpaper/544/77/284/programming-programming-language-python-programming-logo-hd-wallpaper-preview.jpg"
-      title="Node Js"
-      sname="Node Js Course"
-      link="https://nodejs.dev/en/learn/introduction-to-nodejs"
-      btn="Learn Node"
+      imgsrc={sdata[2].imgsrc}
+      title={sdata[2].title}
+      sname={sdata[2].sname}
+      link={sdata[2].link}
+      btn={sdata[2].btn}
     ></Card>
     <Card
-      imgsrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXdwAM18yfOfofSYBy62r3o-rBHQKfoEVVvWjd5yE1obXbsTXSp_eUUviKqr0LhH3X1Yc&usqp=CAU"
-      title="Python"
-      sname="Python Course"
-      link="https://www.python.org/about/gettingstarted"
+      imgsrc={sdata[3].imgsrc}
+      title={sdata[3].title}
+      sname={sdata[3].sname}
+      link={sdata[3].link}
+      btn={sdata[3].btn}
     ></Card>
     <Card
-      imgsrc="https://www.edureka.co/blog/wp-content/uploads/2018/12/brochure-flyer-paper-poster-logo-trademark-text-building-office-buildi-455x300.jpg"
-      title="Php"
-      sname="Php Course"
-      link="https://www.w3schools.com/php"
-      btn="Learn Php"
-    ></Card>
-    <Card
-      imgsrc="https://mir-s3-cdn-cf.behance.net/projects/404/d79839139012263.Y3JvcCw4MTAsNjMzLDAsMA.png"
-      title=".Net"
-      sname=".Net Course"
-      link="https://www.javatpoint.com/net-framework"
-      btn="Learn .net"
-    ></Card>
+      imgsrc={sdata[4].imgsrc}
+      title={sdata[4].title}
+      sname={sdata[4].sname}
+      link={sdata[4].link}
+      btn={sdata[4].btn}
+></Card>
+<Card
+      imgsrc={sdata[5].imgsrc}
+      title={sdata[5].title}
+      sname={sdata[5].sname}
+      link={sdata[5].link}
+      btn={sdata[5].btn}
+></Card>
+
   </>,
   document.getElementById("root")
 );

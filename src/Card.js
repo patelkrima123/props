@@ -1,6 +1,7 @@
 function Card(props) {
   return (
     <div>
+       
       <div className="cards">
         <div className="card">
           <img src={props.imgsrc} className="card_img" />
